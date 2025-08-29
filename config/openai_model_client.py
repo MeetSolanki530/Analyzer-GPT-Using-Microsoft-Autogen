@@ -8,7 +8,7 @@ api_key = os.getenv('GEMINI_API_KEY')
 
 def get_model_client():
     openai_model_client = OpenAIChatCompletionClient(
-        model=os.getenv('MODEL', 'gemini-2.5-flash'),
+        model=os.getenv('MODEL', 'gemini-2.0-flash'),
         api_key= api_key
     )
 
